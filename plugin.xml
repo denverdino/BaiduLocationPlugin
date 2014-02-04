@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.yili.phonegap.plugins.BaiduLocationPlugin" version="0.1.0">
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.yili.phonegap.plugins" version="0.1.0">
     <name>BaiduLocationPlugin</name>
     <description>PhoneGap Location Plugin for Baidu Map</description>
     <license>MIT</license>
     <keywords>phonegap, location</keywords>
  
-    <js-module src="www/location.js" name="Location">
+    <js-module src="www/location.js" name="LocationService">
         <clobbers target="window.locationService" />
     </js-module>
  
