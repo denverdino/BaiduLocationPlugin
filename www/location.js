@@ -1,4 +1,4 @@
-var location = {
+var locationService = {
 	execute: function(action, successCallback, errorCallback) {
 		cordova.exec(    
 			function(pos) {
@@ -27,4 +27,4 @@ var location = {
 		this.execute("stop", successCallback, errorCallback);
 	}
 }
-module.exports = location;
+module.exports = locationService;

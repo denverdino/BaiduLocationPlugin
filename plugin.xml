@@ -7,7 +7,7 @@
     <keywords>phonegap, location</keywords>
  
     <js-module src="www/location.js" name="Location">
-        <clobbers target="window.location" />
+        <clobbers target="window.locationService" />
     </js-module>
  
     <!-- android -->
