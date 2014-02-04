@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="www.dingdangdou.plugins.BaiduLocationPlugin" version="0.1.0">
+    <name>BaiduLocationPlugin</name>
+    <description>PhoneGap Location Plugin for Baidu Map</description>
+    <license>MIT</license>
+    <keywords>phonegap, location</keywords>
+ 
+    <js-module src="www/location.js" name="Location">
+        <clobbers target="window.location" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Calendar">
+                <param name="android-package" value="com.yili.phonegap.plugins.BaiduLocationPlugin"/>
+            </feature>
+        </config-file>
+ 
+        <source-file src="src/android/BaiduLocationPlugin.java" target-dir="src/com/yili/phonegap/plugins" />     
+     </platform>         
+</plugin>
