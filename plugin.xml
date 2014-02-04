@@ -13,11 +13,10 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Calendar">
+            <feature name="BaiduLocationPlugin">
                 <param name="android-package" value="com.yili.phonegap.plugins.BaiduLocationPlugin"/>
             </feature>
-        </config-file>
- 
+        </config-file> 
         <source-file src="src/android/BaiduLocationPlugin.java" target-dir="src/com/yili/phonegap/plugins" />     
      </platform>         
 </plugin>
