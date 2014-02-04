@@ -10,7 +10,7 @@ var locationService = {
 						if (errcode >= 162) {
 							errcode = 162;
 						}
-						errorCallback(code[errcode])
+						errorCallback(pos)
 					};
 				}
 			}, 
@@ -20,8 +20,8 @@ var locationService = {
 			[]
 		)
 	},
-	get: function(successCallback, errorCallback) {
-		this.execute("get", successCallback, errorCallback);
+	getCurrentPosition: function(successCallback, errorCallback) {
+		this.execute("getCurrentPosition", successCallback, errorCallback);
 	},
 	stop: function(action, successCallback, errorCallback) {
 		this.execute("stop", successCallback, errorCallback);
